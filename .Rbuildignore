@@ -1,0 +1,5 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^dev.*R$
+^R/sim_data\.R$
+^data-raw$
