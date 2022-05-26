@@ -1,17 +1,31 @@
 Package: ContinuousRD
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Regression Discontinuity with Continuous Treatments following Dong, Lee, and Gou (2022)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: 
+	c(
+		person(
+			given = "Kyle",
+      family = "Butts",
+      role = c("aut","cre"),
+      email = "kyle.butts@colorado.edu",
+      comment = c(ORCID = "0000-0002-9048-8059")
+    )
+	)
+Description: Implements the proposed estimator from Dong, Lee, and Gou (2022). 
+    The setting is one in which the treatment of interest is continuous and the 
+    regression discontinuity causes a shift in the treatment. The estimator performs
+    this analysis at different percentiles of the treatment varible to allow for 
+    heterogeneous effects.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: 
-    data.table,
-    quantreg
 RoxygenNote: 7.2.0
 Depends: 
-    R (>= 2.10)
+    R (>= 2.10),
+    data.table
+Imports: 
+    fixest,
+    quantreg
+Suggests: 
+    cli

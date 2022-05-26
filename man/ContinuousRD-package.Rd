@@ -4,8 +4,12 @@
 \name{ContinuousRD-package}
 \alias{ContinuousRD}
 \alias{ContinuousRD-package}
-\title{ContinuousRD: What the Package Does (Title Case)}
+\title{ContinuousRD: Regression Discontinuity with Continuous Treatments following Dong, Lee, and Gou (2022)}
 \description{
-More about what it does (maybe more than one line) Use four spaces when indenting paragraphs within the Description.
+Implements the proposed estimator from Dong, Lee, and Gou (2022). The setting is one in which the treatment of interest is continuous and the regression discontinuity causes a shift in the treatment. The estimator performs this analysis at different percentiles of the treatment varible to allow for heterogeneous effects.
+}
+\author{
+\strong{Maintainer}: Kyle Butts \email{kyle.butts@colorado.edu} (\href{https://orcid.org/0000-0002-9048-8059}{ORCID})
+
 }
 \keyword{internal}

@@ -225,6 +225,7 @@ tempname VpimA VpiA Vpi_bcA
 //Estimated bias terms in biasRPi//	
 	mat `biasPi_u1'[`r',1]=(`biasT_plus'-`biasT_minus')/`qte'[`r',1]
 	mat `biasRPi_u2'[`r',1]=`biasRTau_u'+(`biasT_plus'-`biasT_minus')*`tau_u'[`r',1]/`qte'[`r',1]
+
 	}
 
 	svmat `opt_h_Rtau', names(opt_h_Rtau)

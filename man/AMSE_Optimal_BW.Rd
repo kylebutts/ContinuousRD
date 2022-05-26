@@ -4,17 +4,22 @@
 \alias{AMSE_Optimal_BW}
 \title{AMSE-Optimal Bandwidth Selector for Q-LATE Estimator}
 \usage{
-AMSE_Optimal_BW(df, qlist)
+AMSE_Optimal_BW(df, qlist, yname, tname, rname, c = 0, verbose = TRUE)
 }
 \arguments{
-\item{df}{Data.frame. For now, need the following columns:
-Y (outcome variable), T (continuous treatment),
-R (running variable centered at 0), Z (cutoff indicator),
-ZR (cutoff indicator x running variable),
-R2 (running variable^2),
-and ZR2 (cutoff indicator x running variable^2)}
+\item{df}{Data.frame.}
 
 \item{qlist}{Vector of quantiles to estimate QLATE at. Must be evenly spaced}
+
+\item{yname}{Character. Variable name for outcome variable}
+
+\item{tname}{Character. Variable name for continuous treatment}
+
+\item{rname}{Character. Variable name for running variable.}
+
+\item{c}{Numeric. Cutoff for running variable. Default is 0.}
+
+\item{verbose}{Logical. If TRUE, then print results to the console}
 }
 \description{
 AMSE-Optimal Bandwidth Selector for Q-LATE Estimator
